@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form class="form" action="">
+        <div class="card">
+            <div class="card-top">
+                <img class="imglogin" src="img/imgusuario.png" alt="">
+                <h2 class="title">Painel de Contole </h2>
+                <h3>FRAG</h3>
+                <p>Login funcionários</p>
+            </div>
+
+            <div class="card-group">
+                <label for>Usuário</label>
+                <input type="text" name="Usuário" id ="Usuário" required>
+                
+            </div>
+
+            <div class="card-group">
+                <label for>Código</label>
+                <input type="password" name ="Código do Usuário" id ="Código" required>
+            </div>
+
+            <div class="card-group">
+                <button type="submit" onclick ="Logar(); return false">ACESSAR</button>
+                
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function Logar(){
+
+        var Usuário = document.getElementById("Usuário").value;
+        var Código = document.getElementById("Código").value;
+
+        if(Usuário == "Josheph Jiks" && Código == "148.59.146"){
+            window.alert("Sucesso");
+            location.href = "home.html";
+        }
+        else{
+            window.alert("Usuário ou Código incorretos");
+        }
+    }
+
+    </script>
+</body>
+</html>

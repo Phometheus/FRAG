@@ -1,0 +1,44 @@
+body {
+    font-family: helvetica;
+    text-align: center;
+    color: white;
+    background-image: C:\Users\Phometheus\Desktop\Html(sites)\LOGO FRAG PRETO.png;
+    background-size: 2000px;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+ul li a{
+    color: white;
+}
+
+h1{
+    font-size: 32px;
+}
+
+img{
+    border: 3px solid white;
+}
+
+footer {
+    padding: 20px;
+    border-top: 1px solid #666;
+    margin-top: 20px;
+}
